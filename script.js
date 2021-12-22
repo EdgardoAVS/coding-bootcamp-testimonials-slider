@@ -2,20 +2,32 @@ const slider = document.querySelector('#slider');
 let reviewContainer = document.querySelectorAll('.review');
 let reviewContainerLast = reviewContainer[reviewContainer.length - 1];
 
-const buttonPreview = document.querySelector('#button-preview');
-const buttonNext = document.querySelector('#button-next');
+const buttonPreview = document.querySelectorAll('#button-preview');
+const buttonNext = document.querySelectorAll('#button-next');
 
-slider.insertAdjacentElement('beforeend', reviewContainerLast);
+slider.insertAdjacentElement('afterbegin', reviewContainerLast);
 
-function Next() {
+function Next () {
   let reviewContainerFirst = document.querySelectorAll('.review')[0];
   slider.style.marginLeft = '-100%';
-  // slider.style.transition = 'all 0.3s';
   setTimeout(function () {
-    slider.transition = 'none';
     slider.insertAdjacentElement('beforeend', reviewContainerFirst);
     slider.style.marginLeft = '0%';
   }, 300);
 };
 
-buttonNext.addEventListener('click', Next);
+function Preview () {
+  let reviewContainerFirst = document.querySelectorAll('.review')[0];
+  slider.style.marginLeft = '-100%';
+  setTimeout(function () {
+    slider.insertAdjacentElement('beforeend', reviewContainerFirst);
+    slider.style.marginLeft = '0%';
+  }, 300);
+}
+
+for(let i = 0; i < buttonNext.length; i++) {
+  buttonNext[i].addEventListener('click', Next);
+}
+for(let i = 0; i < buttonPreview.length; i++) {
+  buttonPreview[i].addEventListener('click', Preview);
+}
