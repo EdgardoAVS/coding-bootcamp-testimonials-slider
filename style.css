@@ -11,6 +11,11 @@
 body {
   font-family: 'Quicksand', sans-serif;
 }
+.slider {
+  width: 200%;
+  display: flex;
+  margin-left: 0%;
+}
 .curve {
   background-image: url(images/pattern-curve.svg);
   background-repeat: no-repeat;
@@ -23,6 +28,7 @@ body {
 .container {
   width: 90%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .review {
@@ -58,6 +64,9 @@ body {
   background-color: #ffffff;
   border-radius: 40px;
   overflow: hidden;
+}
+.button a:hover {
+  background-color: #f5f5f5;
 }
 .button a img {
   width: 100%;
