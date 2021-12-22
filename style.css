@@ -51,7 +51,7 @@ body {
 .author-img {
   width: 80%;
   position: absolute;
-  box-shadow: 0px 38px 30px -13px rgba(0,0,0,0.37);
+  /* box-shadow: 0px 38px 30px -13px rgba(0,0,0,0.37); */
 }
 .button {
   position: absolute;
