@@ -117,19 +117,24 @@ body {
   .container {
     display: grid;
     height: 100vh;
+    max-width: 1200px;
   }
   .review-img-container {
     margin: 0;
   }
   .review-info-container {
+    width: 100%;
+  }
+  .review-info-container {
     background-size: 12%;
     background-position: 100px top;
-    padding: 3% 0;
+    padding: 3% 0 0;
   }
   .review {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
+    padding: 0;
   }
   .curve {
     background-size: 50%;
