@@ -112,3 +112,26 @@ body {
   right: 0px;
   width: 100%;
 }
+
+@media (min-width: 700px) {
+  .container {
+    display: grid;
+    height: 100vh;
+  }
+  .review-img-container {
+    margin: 0;
+  }
+  .review-info-container {
+    background-size: 12%;
+    background-position: 100px top;
+    padding: 3% 0;
+  }
+  .review {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  .curve {
+    background-size: 50%;
+  }
+}
