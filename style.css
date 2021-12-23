@@ -112,6 +112,9 @@ body {
   right: 0px;
   width: 100%;
 }
+.attribution {
+  text-align: center;
+}
 
 @media (min-width: 700px) {
   .container {
